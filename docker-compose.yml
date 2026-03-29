@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  rag-app:
+    build: .
+    container_name: rag-chat-nvidia
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      - NVIDIA_API_KEY=${NVIDIA_API_KEY}
+    volumes:
+      - ./data:/app/data
+      - ./src:/app/src
+    restart: unless-stopped
+    networks:
+      - rag-network
+
+networks:
+  rag-network:
+    driver: bridge
