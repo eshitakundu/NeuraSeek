@@ -73,22 +73,6 @@ docker-compose down
 3. **Ask Questions**: Type questions in the chat interface
 4. **View Sources**: Expand source citations to see relevant document chunks
 
-## 🏗️ Project Structure
-rag-chat-nvidia/
-├── src/
-│   ├── app.py                    # Main Streamlit app
-│   ├── utils/
-│   │   ├── document_processor.py # Document parsing
-│   │   ├── vector_store.py       # FAISS management
-│   │   └── rag_chain.py          # RAG logic
-│   └── components/               # UI components
-├── data/                         # Vector store & uploads
-├── .github/workflows/            # CI/CD pipelines
-├── Dockerfile                    # Container definition
-├── docker-compose.yml            # Docker orchestration
-├── pyproject.toml                # Python dependencies
-└── README.md                     # Documentation
-
 ## 🔧 Configuration
 
 ### Environment Variables
